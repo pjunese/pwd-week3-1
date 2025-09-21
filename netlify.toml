@@ -1,0 +1,10 @@
+# netlify.toml
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.processing]
+  skip_processing = false  # 후처리 사용
+
+[build.processing.forms]
+  enabled = true           # ✅ 폼 감지 ON
